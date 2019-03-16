@@ -8,10 +8,19 @@ let assert = require('assert')
 let statement = 'Penn Mutual is a company that sells life insurance'
 
 function reverseLetters(str) {
-  // PLACE YOUR CODE ABOVE
-
-
   // PLACE YOUR CODE BELOW
+  const words = str.split(" ").map(word => {
+    let result = ""
+    for(let i=word.length -1; i >= 0; i--) {     
+      
+      result += word[i]
+    }
+    
+    return result;
+  });
+ 
+  return words.join(" ");
+  // PLACE YOUR CODE ABOVE
 }
 
 let reversedWords = reverseLetters(statement)
