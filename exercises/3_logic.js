@@ -11,7 +11,21 @@ function paintMixer(color1, color2) {
   The order of the params should not matter.
   */
   // PLACE YOUR CODE BELOW
+  /**
+   * Normally this constant declaration would be outside of this function.
+   */
+  const colorCombos = {
+    "bluered": "purple",
+    "redblue": "purple",
+    "greenred": "brown",
+    "redgreen": "brown",
+    "blueyellow": "green",
+    "yellowblue": "green"
+  }
 
+  const result = colorCombos[color1+color2] || "unknown";
+  
+  return result;
   // PLACE YOUR CODE ABOVE
 }
 
